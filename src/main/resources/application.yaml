@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: demo
+  datasource:  
+    url: jdbc:postgresql://localhost:5432/mydb?useSSL=false
+    username: user1  
+    password: Baumkuchen  
+
+jpa:
+  hibernate:
+    ddl-auto: update  # Добавить столбцы из сущности
+  show-sql: true  # Выводить SQL в логи
+
+# OAuth2 Google
+# spring.security.oauth2.client.registration.google.client-id=your-google-client-id
+# spring.security.oauth2.client.registration.google.client-secret=your-google-client-secret
+
+server:
+  port: 8080
